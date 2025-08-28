@@ -1,9 +1,8 @@
 window.onload = inicio;
-
-// 🔹 Tus videos en Cloudinary
 var videos = [
-    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756329429/video2_cffc4r.mp4",
+    // 🎬 Links de Cloudinary
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756329418/video1_zbdzqg.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756329429/video2_cffc4r.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362564/6X19_yuudie.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362581/5X17_hdk0zl.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362784/1X23_rqmxvy.mp4",
@@ -35,20 +34,25 @@ function inicio() {
     document.querySelector(".pantallacompleta").onclick = pantallacompleta;
     document.querySelector(".barra1").onclick = buscar;
 
+    // crear tooltip
     tooltip = document.createElement("div");
     tooltip.className = "tooltip";
     tooltip.textContent = "00:00";
     document.querySelector(".barra1").appendChild(tooltip);
 
+    // eventos para tooltip
     document.querySelector(".barra1").addEventListener("mousemove", mostrarTooltip);
     document.querySelector(".barra1").addEventListener("mouseleave", () => {
         tooltip.style.display = "none";
     });
 
+    // reproducir o pausar con clic en el video
     vid.onclick = togglePlay;
+
+    // reproducir o pausar con barra espaciadora
     document.addEventListener("keydown", function(e) {
         if (e.code === "Space") {
-            e.preventDefault();
+            e.preventDefault(); // evita scroll
             togglePlay();
         }
     });
@@ -56,6 +60,9 @@ function inicio() {
     reordenar();
     vid.ontimeupdate = actualizar;
     vid.onloadeddata = actualizar;
+
+    // 👇 evento para pasar al siguiente cuando termina
+    vid.onended = siguiente;
 }
 
 function play() {
@@ -74,17 +81,17 @@ function togglePlay() {
 }
 
 function volumen() {
-    vid.muted = !vid.muted;
+    vid.muted = !vid.muted; // 🔊 mute/unmute
     this.src = vid.muted ? "img/volumen0.svg" : "img/volumen1.svg";
 }
 
 function reordenar() {
-    orden = [];
+    orden = []; // limpiar orden
     for (let i = 0; i < videos.length; i++) {
         let azar;
         do {
             azar = Math.floor(Math.random() * videos.length);
-        } while (orden.includes(azar));
+        } while (orden.indexOf(azar) >= 0);
         orden.push(azar);
     }
     reproducir();
@@ -98,10 +105,14 @@ function reproducir() {
 
 function siguiente() {
     videoActual++;
-    if (videoActual >= videos.length) {
-        videoActual = 0;
+    if (videoActual < videos.length) {
+        reproducir();
+    } else {
+        console.log("Todos los videos han terminado 🎉");
+        videoActual = videos.length - 1;
+        vid.pause();
+        alert("✅ Fin de la lista de reproducción");
     }
-    reproducir();
 }
 
 function reiniciar() {
@@ -110,9 +121,21 @@ function reiniciar() {
 
 function pantallacompleta() {
     if (!document.fullscreenElement) {
-        vid.requestFullscreen?.() || vid.webkitRequestFullscreen?.() || vid.msRequestFullscreen?.();
+        if (vid.requestFullscreen) {
+            vid.requestFullscreen();
+        } else if (vid.webkitRequestFullscreen) { // Safari
+            vid.webkitRequestFullscreen();
+        } else if (vid.msRequestFullscreen) { // IE/Edge
+            vid.msRequestFullscreen();
+        }
     } else {
-        document.exitFullscreen?.() || document.webkitExitFullscreen?.() || document.msExitFullscreen?.();
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
     }
 }
 
@@ -133,8 +156,8 @@ function conversion(segundos) {
 function buscar(e) {
     let clickBarra = e.offsetX;
     let anchoNavegador = document.querySelector(".barra1").offsetWidth;
-    let porcentaje = (100 * clickBarra) / anchoNavegador;
-    let posicion = Math.floor(vid.duration * (porcentaje / 100));
+    let poncentaje = (100 * clickBarra) / anchoNavegador;
+    let posicion = Math.floor(vid.duration * (poncentaje / 100));
     vid.currentTime = posicion;
 }
 
@@ -147,5 +170,6 @@ function mostrarTooltip(e) {
 
     tooltip.style.display = "block";
     tooltip.textContent = conversion(segundos);
+
     tooltip.style.left = `${posicionX}px`;
 }
