@@ -1,11 +1,25 @@
 window.onload = inicio;
 
 // 🔹 Tus videos en Cloudinary
-const videos = [
-  "https://res.cloudinary.com/dk80vkv39/video/upload/v1756329429/video2_cffc4r.mp4",
-  "https://res.cloudinary.com/dk80vkv39/video/upload/v1756329418/video1_zbdzqg.mp4"
+var videos = [
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756329429/video2_cffc4r.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756329418/video1_zbdzqg.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362564/6X19_yuudie.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362581/5X17_hdk0zl.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362784/1X23_rqmxvy.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362788/3X6_uldu9h.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362791/2X5_dogxko.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362793/1X18_ok6fww.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362793/5X15_e073lf.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362797/7X8_j7nzdu.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362798/3X16_t18tah.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362799/6X10_kbmide.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362804/5X11_hv5sov.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362805/6X9_lqmuaw.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362805/8X1_zcb4wn.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362807/5X8_iisn5t.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362811/1X12_ubjbmh.mp4"
 ];
-
 var vid;
 var orden = [];
 var videoActual = 0;
