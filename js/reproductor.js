@@ -17,8 +17,13 @@ var videos = [
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362805/6X9_lqmuaw.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362805/8X1_zcb4wn.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362807/5X8_iisn5t.mp4",
-    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362811/1X12_ubjbmh.mp4"
-];
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362811/1X12_ubjbmh.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756789984/2X11_TBBT_xd1gbi.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756789995/7X3_TBBT_oni0ah.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756790004/3X8_TBBT_srnykk.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756790010/3X22_TBBT_mxwold.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756790013/4X2_TBBT_joci2m.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756790019/9X11_TBBT_q7yqhx.mp4"];
 var vid;
 var orden = [];
 var videoActual = 0;
