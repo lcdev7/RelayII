@@ -23,7 +23,15 @@ var videos = [
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756790004/3X8_TBBT_srnykk.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756790010/3X22_TBBT_mxwold.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756790013/4X2_TBBT_joci2m.mp4",
-    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756790019/9X11_TBBT_q7yqhx.mp4"];
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756790019/9X11_TBBT_q7yqhx.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756878486/4X11_suco4u.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885735/3X18_TBBT_lqvw28.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885742/10X21_TBBT_dxwsgc.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885743/12X18_TBBT_uzm5sf.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885750/7X11_TBBT_s2xvqu.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885752/4X3_TBBT_bhk0lr.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885754/5X20_TBBT_ymnkjb.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885757/5X23_TBBT_yoz25j.mp4"];
 var vid;
 var orden = [];
 var videoActual = 0;
