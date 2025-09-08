@@ -1,6 +1,5 @@
 window.onload = inicio;
 var videos = [
-    // 🎬 Links de Cloudinary
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756329418/video1_zbdzqg.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756329429/video2_cffc4r.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756362564/6X19_yuudie.mp4",
@@ -31,7 +30,23 @@ var videos = [
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885750/7X11_TBBT_s2xvqu.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885752/4X3_TBBT_bhk0lr.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885754/5X20_TBBT_ymnkjb.mp4",
-    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885757/5X23_TBBT_yoz25j.mp4"];
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1756885757/5X23_TBBT_yoz25j.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313845/8X18_SIMPSONS_k1pron.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313854/8X15_SIMPSONS_wwguqx.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313854/8X23_SIMPSONS_qdfljh.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313855/7X5_SIMPSONS_xbagba.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313857/8X2_SIMPSONS_femkgg.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313859/20X6_SIMPSONS_hyj1aa.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313860/27X3_SIMPSONS_idmzxp.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313860/12X14_SIMPSONS_hfsiq1.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313861/20X13_SIMPSONS_kpuzji.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313864/23X11_SIMPSONS_rrphee.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313867/3X10_SIMPSONS_xgn2tv.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313869/27X9_SIMPSONS_ot2jdu.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313866/14X12_SIMPSONS_jcjkhr.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757313871/9X13_SIMPSONS_ggmdaq.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757314246/25X4_SIMPSONS_pxazlq.mp4"
+];
 var vid;
 var orden = [];
 var videoActual = 0;
