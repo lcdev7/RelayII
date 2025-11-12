@@ -57,7 +57,19 @@ var videos = [
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1757400045/6X16_TBBT_kougcl.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1757400045/4X13_flakgu.mp4",
     "https://res.cloudinary.com/dk80vkv39/video/upload/v1757400055/6X14_m1jqdg.mp4",
-    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757400063/7X9_TBBT_imtnfl.mp4"
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1757400063/7X9_TBBT_imtnfl.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929340/loney_T2X2_nsxuwy.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929353/loney_T1X3_pfdxwl.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929358/loney_T1X11_leabtb.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929363/loney_T1X18_pkuops.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929364/loney_T1X10_yicr16.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929361/loney_T1X12_ypppup.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929369/loney_T1X7_dpgy1m.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929370/loney_T1X22_ngqkxg.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929378/loney_T2X6_uzs1pu.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929417/loneyT1X15_ydfpdl.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929451/loney_T2X4_ocqpuh.mp4",
+    "https://res.cloudinary.com/dk80vkv39/video/upload/v1762929513/loney_T1X21_spofhv.mp4"
 ];
 var vid;
 var orden = [];
